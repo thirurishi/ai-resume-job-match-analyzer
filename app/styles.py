@@ -516,6 +516,18 @@ def inject_css():
             -webkit-text-fill-color: #64748B !important;
             opacity: 1 !important;
         }
+        [data-testid="stFileUploader"] small,
+        [data-testid="stFileUploader"] span,
+        [data-testid="stFileUploader"] p,
+        [data-testid="stFileUploader"] div {
+            color: #FFFFFF !important;
+        }
+        [data-testid="stFileUploaderFileName"] {
+            color: #FFFFFF !important;
+        }
+        [data-testid="stFileUploaderDeleteBtn"] {
+            color: #FFFFFF !important;
+        }
         </style>
         """,
         unsafe_allow_html=True,
