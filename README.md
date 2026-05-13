@@ -79,11 +79,11 @@ ai-resume-job-match-analyzer/
 ### Home Page
 ![Home Page](images/home.png)
 
-### Analysis Results
-![Analysis Results](images/results1.png)
+### Analysis Dashboard
+![Analysis Dashboard](images/results1.png)
 
-### Analysis Results
-![Analysis Results](images/results2.png)
+### Recruiter Insights & Reports
+![Recruiter Insights](images/results2.png)
 
 
 ## 🚀 Quick Start
