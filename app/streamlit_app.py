@@ -59,7 +59,7 @@ with st.sidebar:
 
     st.markdown(
         """
-        <div class='workflow-item active'>
+        <div class='workflow-item'>
             <div class='workflow-dot'>1</div>
             <span>Upload Resume</span>
         </div>
@@ -289,11 +289,11 @@ if analyze_clicked:
 
                 tab1, tab2, tab3 = st.tabs(["📄 Cover Letter", "💼 LinkedIn Message", "📊 Full Report"])
                 with tab1:
-                    st.text_area("Cover Letter", cover_letter, height=300, disabled=True, key="cover_letter_view")
+                    st.text_area("Cover Letter", cover_letter, height=300, disabled=False, key="cover_letter_view")
                 with tab2:
-                    st.text_area("LinkedIn Message", linkedin_message, height=240, disabled=True, key="linkedin_view")
+                    st.text_area("LinkedIn Message", linkedin_message, height=240, disabled=False, key="linkedin_view")
                 with tab3:
-                    st.text_area("Full Report", report_content, height=420, disabled=True, key="report_view")
+                    st.text_area("Full Report", report_content, height=420, disabled=False, key="report_view")
 
                 st.markdown(
                     """
@@ -339,13 +339,13 @@ if analyze_clicked:
 
                 with st.expander("Resume Text Preview"):
                     preview = resume_data['raw_text'][:3000]
-                    st.text_area("Resume Text", preview, height=220, disabled=True)
+                    st.text_area("Resume Text", preview, height=220, disabled=False)
                     if len(resume_data['raw_text']) > 3000:
                         st.write("... (truncated)")
 
                 with st.expander("Job Description Preview"):
                     preview = job_data['raw_text'][:3000]
-                    st.text_area("Job Description", preview, height=220, disabled=True)
+                    st.text_area("Job Description", preview, height=220, disabled=False)
                     if len(job_data['raw_text']) > 3000:
                         st.write("... (truncated)")
 

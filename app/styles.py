@@ -74,29 +74,29 @@ def inject_css():
             padding: 10px 12px;
             margin-bottom: 8px;
             border-radius: 14px;
-            color: #475569;
+            color: #0F172A;
             font-size: 13px;
-            background: #F8FAFC;
+            background: #FFFFFF;
             border: 1px solid #E5E7EB;
         }
         .workflow-item.active {
-            background: rgba(16, 185, 129, 0.12);
+            background: #FFFFFF;
             color: #0F172A;
-            border-color: rgba(16, 185, 129, 0.24);
+            border-color: #E5E7EB;
             font-weight: 600;
         }
         .workflow-dot {
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            background: #FFFFFF;
+            background: #10B981;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 11px;
             font-weight: 700;
-            color: #64748B;
-            border: 1px solid #E5E7EB;
+            color: white;
+            border: 1px solid #10B981;
         }
         .workflow-item.active .workflow-dot {
             background: #10B981;
@@ -244,8 +244,12 @@ def inject_css():
             min-height: 220px;
             font-weight: 500;
         }
+        .stTextArea>div>div>textarea:disabled {
+            background: white;
+            color: #111827;
+        }
         .stTextArea>div>div>textarea::placeholder {
-            color: #9CA3AF;
+            color: #94A3B8;
         }
         .stButton>button {
             width: 100%;
@@ -319,7 +323,7 @@ def inject_css():
         }
         .stat-label {
             font-size: 14px;
-            color: #475569;
+            color: #64748B;
             font-weight: 600;
         }
         .stMetric {
@@ -356,7 +360,7 @@ def inject_css():
             border-radius: 14px;
             background: white;
             border: 1px solid #E5E7EB;
-            color: #475569;
+            color: #111827;
             padding: 10px 14px;
             font-weight: 600;
         }
@@ -369,9 +373,14 @@ def inject_css():
             background: white;
             border: 1px solid #E5E7EB;
             border-radius: 18px;
+            color: #111827;
         }
         .stExpander>div {
             background: white;
+            color: #111827;
+        }
+        .stExpander button {
+            color: #111827;
         }
         #MainMenu, header, footer {
             visibility: hidden;
@@ -382,6 +391,130 @@ def inject_css():
         ::selection {
             background: rgba(59, 130, 246, 0.12);
             color: #111827;
+        }
+        .stApp,
+        .stApp p,
+        .stApp div,
+        .stApp span,
+        .stApp label,
+        .stMarkdown,
+        .stMarkdown p {
+            color: #111827 !important;
+        }
+        .stButton button,
+        button[kind="primary"] {
+            color: #FFFFFF !important;
+        }
+        textarea,
+        .stTextArea textarea {
+            color: #111827 !important;
+            background-color: #FFFFFF !important;
+            caret-color: #111827 !important;
+        }
+        textarea::placeholder {
+            color: #94A3B8 !important;
+        }
+        [data-testid="stFileUploader"] * {
+            color: #111827 !important;
+        }
+        [data-testid="stMetric"],
+        [data-testid="stMetric"] *,
+        [data-testid="stMetricValue"],
+        [data-testid="stMetricLabel"] {
+            color: #111827 !important;
+            opacity: 1 !important;
+        }
+        [data-baseweb="tab"],
+        [data-baseweb="tab"] * {
+            color: #111827 !important;
+            opacity: 1 !important;
+        }
+        .streamlit-expanderHeader,
+        .streamlit-expanderHeader *,
+        [data-testid="stExpander"] *,
+        [data-testid="stExpander"] p,
+        [data-testid="stExpander"] div {
+            color: #111827 !important;
+            opacity: 1 !important;
+        }
+        .result-section,
+        .analysis-card,
+        .sidebar-brand,
+        .sidebar-icon,
+        .sidebar-title-text,
+        .sidebar-subtitle,
+        .workflow-item,
+        .workflow-dot,
+        .recent-history-card,
+        .privacy-card,
+        .page-header,
+        .small-badge,
+        .page-title,
+        .page-subtitle,
+        .card-title,
+        .card-note,
+        .feature-chip-row,
+        .feature-chip,
+        .section-title,
+        .section-note,
+        .stat-card,
+        .stat-number,
+        .stat-label,
+        .chip-pill,
+        .stTabs>div>div>button,
+        .stTabs>div>div>button[aria-selected="true"],
+        .stExpander,
+        .stExpander>div {
+            color: #111827 !important;
+            opacity: 1 !important;
+        }
+        * {
+            color: inherit !important;
+            opacity: 1 !important;
+        }
+        [style*="color: white"],
+        [style*="color: #fff"],
+        [style*="color: #F8FAFC"],
+        [style*="opacity: 0.05"],
+        [style*="opacity: 0.1"],
+        [style*="opacity: 0.2"] {
+            color: #111827 !important;
+            opacity: 1 !important;
+        }
+        textarea {
+            color: #111827 !important;
+            -webkit-text-fill-color: #111827 !important;
+            opacity: 1 !important;
+            background-color: #FFFFFF !important;
+        }
+        textarea * {
+            color: #111827 !important;
+            -webkit-text-fill-color: #111827 !important;
+            opacity: 1 !important;
+        }
+        .stTextArea textarea {
+            color: #111827 !important;
+            -webkit-text-fill-color: #111827 !important;
+            opacity: 1 !important;
+            background-color: #FFFFFF !important;
+        }
+        [data-testid="stTextArea"] textarea {
+            color: #111827 !important;
+            -webkit-text-fill-color: #111827 !important;
+            opacity: 1 !important;
+            background-color: #FFFFFF !important;
+        }
+        [data-testid="stTextArea"] textarea:disabled,
+        [data-testid="stTextArea"] textarea[disabled] {
+            color: #111827 !important;
+            -webkit-text-fill-color: #111827 !important;
+            opacity: 1 !important;
+            background-color: #FFFFFF !important;
+        }
+        textarea::placeholder {
+            color: #64748B !important;
+            -webkit-text-fill-color: #64748B !important;
+            opacity: 1 !important;
         }
         </style>
         """,
