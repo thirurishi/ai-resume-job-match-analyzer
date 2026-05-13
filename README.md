@@ -83,7 +83,7 @@ ai-resume-job-match-analyzer/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ai-resume-job-match-analyzer.git
+   git clone https://github.com/thirurishi/ai-resume-job-match-analyzer.git
    cd ai-resume-job-match-analyzer
    ```
 
