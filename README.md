@@ -70,6 +70,21 @@ ai-resume-job-match-analyzer/
 ├── DEPLOYMENT.md                 # Deployment guide
 └── .gitignore                    # Git ignore rules
 ```
+## 🚀 Live Demo
+
+🔗 [Try the live app](https://ai-resume-job-match-analyzer.streamlit.app)
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](images/home.png)
+
+### Analysis Results
+![Analysis Results](images/results1.png)
+
+### Analysis Results
+![Analysis Results](images/results2.png)
+
 
 ## 🚀 Quick Start
 
