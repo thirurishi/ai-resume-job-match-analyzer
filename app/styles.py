@@ -528,6 +528,27 @@ def inject_css():
         [data-testid="stFileUploaderDeleteBtn"] {
             color: #FFFFFF !important;
         }
+        [data-testid="stFileUploader"] button,
+        [data-testid="stFileUploader"] button *,
+        [data-testid="stFileUploader"] [role="button"],
+        [data-testid="stFileUploader"] [role="button"] * {
+            color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+            opacity: 1 !important;
+        }
+        [data-testid="stFileUploader"] small,
+        [data-testid="stFileUploader"] span,
+        [data-testid="stFileUploader"] p {
+            color: #E5E7EB !important;
+            -webkit-text-fill-color: #E5E7EB !important;
+            opacity: 1 !important;
+        }
+        [data-testid="stFileUploaderFileName"],
+        [data-testid="stFileUploaderFileName"] * {
+            color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+            opacity: 1 !important;
+        }
         </style>
         """,
         unsafe_allow_html=True,
