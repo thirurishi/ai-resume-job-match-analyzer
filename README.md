@@ -18,6 +18,41 @@ AI Resume & Job Match Analyzer is a production-quality tool that analyzes the al
 - 📊 **Detailed Reports** - Download comprehensive analysis reports
 - 💾 **History Tracking** - Store and review past analyses
 
+## ✨ Product Highlights
+- End-to-end resume and job description analysis workflow
+- ATS scoring engine with explainable weighted scoring formula
+- Skill gap detection using NLP-based keyword extraction
+- Semantic relevance scoring using TF-IDF and cosine similarity
+- Recruiter-style feedback with resume improvement suggestions
+- Cover letter and LinkedIn outreach message generation
+- Downloadable analysis report
+- SQLite-based analysis history with delete support
+- Live deployment using Streamlit Cloud
+
+  ## 🧠 System Workflow
+```text
+User
+ ↓
+Streamlit Frontend
+ ↓
+Resume PDF Parser + Job Description Parser
+ ↓
+Text Cleaning Layer
+ ↓
+ATS Scoring Engine
+ ├── Skill Matching
+ ├── Semantic Similarity
+ └── Resume Completeness
+ ↓
+Recruiter Feedback Generator
+ ↓
+Cover Letter + LinkedIn Message Generator
+ ↓
+Downloadable Report
+ ↓
+SQLite Analysis History
+```
+
 ## 🏗️ Architecture
 
 ### Technology Stack
@@ -324,7 +359,7 @@ Contributions welcome! Please follow these steps:
 
 ## 👨‍💻 Author
 
-Built as a production-quality portfolio project to demonstrate full-stack development capabilities.
+Built by **Thirumurugan Kumar** as a production-grade AI portfolio project demonstrating data science, NLP, full-stack development, and deployment-ready architecture.
 
 ## 📞 Support
 
