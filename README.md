@@ -313,9 +313,9 @@ Built as a production-quality portfolio project to demonstrate full-stack develo
 
 ## 📞 Support
 
-- 📧 Email: support@example.com
-- 🐙 GitHub Issues: [Create an issue](https://github.com/yourusername/ai-resume-job-match-analyzer/issues)
-- 📚 Documentation: See [docs/](docs/) directory
+- GitHub Issues: https://github.com/thirurishi/ai-resume-job-match-analyzer/issues
+- Documentation: See `/docs` directory
+- Portfolio: Add your portfolio link here
 
 ## 🙏 Acknowledgments
 
