@@ -153,3 +153,18 @@ def get_analysis_history(limit: int = 5) -> list:
     except Exception as e:
         print(f"Error retrieving analysis history: {str(e)}")
         return []
+
+
+def delete_analysis(analysis_id: int) -> bool:
+    """Delete a single analysis record by ID."""
+    try:
+        conn = sqlite3.connect(str(DB_PATH))
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM analysis_history WHERE id = ?", (analysis_id,))
+        conn.commit()
+        deleted = cursor.rowcount > 0
+        conn.close()
+        return deleted
+    except Exception as e:
+        print(f"Error deleting analysis record: {str(e)}")
+        return False

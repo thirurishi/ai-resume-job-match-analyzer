@@ -18,7 +18,7 @@ from core.generators.resume_rewriter import generate_resume_bullets
 from core.generators.cover_letter_generator import generate_cover_letter
 from core.generators.linkedin_message_generator import generate_linkedin_message
 from core.generators.report_generator import generate_text_report
-from database.db_manager import init_db, save_analysis, get_analysis_history
+from database.db_manager import init_db, save_analysis, get_analysis_history, delete_analysis
 
 # Initialize database on app startup
 init_db()
@@ -89,15 +89,24 @@ with st.sidebar:
     history = get_analysis_history(limit=4)
     if history:
         for analysis in history:
-            st.markdown(
-                f"""
-                <div class='recent-history-card'>
-                    <strong>{analysis['resume_filename']}</strong><br>
-                    ATS: {analysis['ats_score']:.0f}% • Skills: {analysis['skill_match_percentage']:.0f}%
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
+            col1, col2 = st.columns([0.82, 0.18])
+            with col1:
+                st.markdown(
+                    f"""
+                    <div class='recent-history-card'>
+                        <strong>{analysis['resume_filename']}</strong><br>
+                        ATS: {analysis['ats_score']:.0f}% • Skills: {analysis['skill_match_percentage']:.0f}%
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+            with col2:
+                if st.button("×", key=f"delete_history_{analysis['id']}"):
+                    if delete_analysis(analysis['id']):
+                        st.success("History item deleted.")
+                        st.rerun()
+                    else:
+                        st.warning("Unable to delete history item.")
     else:
         st.markdown(
             """

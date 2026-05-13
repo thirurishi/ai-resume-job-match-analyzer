@@ -549,6 +549,41 @@ def inject_css():
             -webkit-text-fill-color: #FFFFFF !important;
             opacity: 1 !important;
         }
+        /* Expander closed and open headers */
+        [data-testid="stExpander"] details summary {
+            background: #FFFFFF !important;
+            color: #111827 !important;
+            border-radius: 14px !important;
+            border: 1px solid #E5E7EB !important;
+        }
+        /* Expander header text and icons */
+        [data-testid="stExpander"] details summary *,
+        [data-testid="stExpander"] details summary p,
+        [data-testid="stExpander"] details summary span,
+        [data-testid="stExpander"] details summary svg {
+            color: #111827 !important;
+            fill: #111827 !important;
+            opacity: 1 !important;
+        }
+        /* Expander body */
+        [data-testid="stExpander"] details div {
+            background: #FFFFFF !important;
+            color: #111827 !important;
+        }
+        /* Remove dark selected/open state */
+        [data-testid="stExpander"] details[open] summary {
+            background: #FFFFFF !important;
+            color: #111827 !important;
+            border-bottom: 1px solid #E5E7EB !important;
+        }
+        /* Body text visibility */
+        [data-testid="stExpander"] p,
+        [data-testid="stExpander"] li,
+        [data-testid="stExpander"] ol,
+        [data-testid="stExpander"] ul {
+            color: #111827 !important;
+            opacity: 1 !important;
+        }
         </style>
         """,
         unsafe_allow_html=True,
