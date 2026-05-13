@@ -77,13 +77,13 @@ ai-resume-job-match-analyzer/
 ## 📸 Screenshots
 
 ### Home Page
-<img src="images/home.png" width="100%" alt="Home Page"/>
+<img src="./images/home.png" width="100%" alt="Home Page"/>
 
 ### Analysis Dashboard
-<img src="images/results1.png" width="100%" alt="Analysis Dashboard"/>
+<img src="./images/results1.png" width="100%" alt="Analysis Dashboard"/>
 
 ### Recruiter Insights & Reports
-<img src="images/results2.png" width="100%" alt="Recruiter Insights"/>
+<img src="./images/results2.png" width="100%" alt="Recruiter Insights"/>
 
 
 ## 🚀 Quick Start
